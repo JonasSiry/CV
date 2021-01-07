@@ -1,186 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue sur le CV de Jonas Siry, un talentueux developpeur web !">
-    <meta name="keywords" content="curriculum vitae, Jonas Siry, développeur web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bienvenue sur le CV de Jonas Siry, un talentueux developpeur web !"
+    />
+    <meta
+      name="keywords"
+      content="curriculum vitae, Jonas Siry, développeur web"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/8970751fdd.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/8970751fdd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>CV Jonas Siry</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="headinfo">
-            <h1>Jonas Siry</h1>
-            <h2>Développeur Web</h2>
-            <p>Ce CV a été entièrement réalisé <br>en HTML et CSS</p>
-        </div>
+      <div id="headerleft">
         <div id="photo"></div>
+        <div id="headerleftbottom">
+          <div class="stats">
+            <p>28 ans</p>
+          </div>
+          <div class="iconinfo">
+            <i class="fas fa-car"></i>
+            <p>Véhiculé</p>
+          </div>
+        </div>
+      </div>
+      <div id="headinfo">
+        <h1>Jonas Siry</h1>
+        <h2>Développeur Web</h2>
+        <p>CV entièrement réalisé <br />en HTML et CSS</p>
+      </div>
+      <div id="headerright">
+        <p>18 rue de Caumont 31500 Toulouse</p>
+        <p>06-32-60-65-96</p>
+        <p>jonas.siry@gmail.com</p>
+        <a href="https://github.com/JonasSiry">Page GitHub (click)</a>
+      </div>
     </header>
 
-    <section id="statistiques">
-        <h2>Informations</h2>
-        <div id="statsection">
-            <div id="infos">
-                <div class="stats">
-                    <h3>Date de naissance</h3>
-                    <p>25-05-1992 (28 ans)</p>
-                </div>
-                <div class="stats">
-                    <h3>Site web</h3>
-                    <a href="https://github.com/JonasSiry">Page GitHub (click)</a>
-                </div>
-                <div class="stats">
-                    <h3>Numéro de téléphone</h3>
-                    <p>06-32-60-65-96</p>
-                </div>
-                <div class="stats">
-                    <h3>Email</h3>
-                    <p>jonas.siry@gmail.com</p>
-                </div>
-            </div>
-            <div id="aboutandicon">
-                <p id="about">Musicien de longue date devenu développeur web, je mets désormais mes compétences
-                    techniques
-                    et ma
-                    créativité au service de la programmation. Après un passage éclair chez OpenClassrooms et un diplôme
-                    obtenu en moins de 3 mois (au lieu des 6 annoncés), je suis désormais à la recherche d'un emploi !
-                </p>
-                <div id="staticon">
-                    <div class="iconinfo">
-                        <i class="fas fa-car"></i>
-                        <p>J'ai le permis</p>
-                    </div>
-                    <a href="https://www.linkedin.com/in/jonas-siry-b12594203/" class="iconinfo">
-                        <i class="fab fa-linkedin"></i>
-                        <p>Mon profil Linkedin</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section id="experiences">
+      <h2>Réalisations</h2>
+      <ul>
+        <li>
+          Frontend d'un site e-commerce en JS<i class="fas fa-coffee"></i>
+        </li>
+        <li>
+          Backend/API sécurisée avec node.js pour un site d'avis
+          gastronomiques<i class="fas fa-pizza-slice"></i>
+        </li>
+        <li>
+          Réseau social d'entreprise avec node.js et vue.js<i
+            class="fab fa-facebook-square"
+          ></i>
+        </li>
+      </ul>
+    </section>
+
+    <section id="formation">
+      <h2>Formation</h2>
+      <ul>
+        <li>Octobre à Décembre 2020 - OpenClassrooms : Développeur Web</li>
+        <li>
+          2016-2017 - Music Academy International : Composition de musiques à
+          l'image
+        </li>
+        <li>
+          2014-2016 - Cours Florent Musique : Musique Assistée par Ordinateur
+        </li>
+        <li>2012-2014 - Université Jean-Jaurès : Licence d'Histoire</li>
+        <li>
+          2001-2011 - Conservatoire à Rayonnement Régional de Toulouse : Violon,
+          Orchestre
+        </li>
+      </ul>
     </section>
 
     <section id="competences">
-        <h2>Compétences</h2>
-        <div id="skills">
-            <div class="skills">
-                <h3>HTML/CSS</h3>
-                <div class="skillbar">
-                    <div id="skillbarinone"></div>
-                </div>
-                <div class="skillicon">
-                    <i class="fab fa-sass"></i>
-                </div>
-            </div>
-            <div class="skills">
-                <h3>JavaScript</h3>
-                <div class="skillbar">
-                    <div id="skillbarintwo"></div>
-                </div>
-                <div class="skillicon">
-                    <i class="fab fa-vuejs"></i>
-                    <i class="fab fa-node"></i>
-                </div>
-            </div>
-            <div class="skills">
-                <h3>Bases de données</h3>
-                <div class="skillbar">
-                    <div id="skillbarinthree"></div>
-                </div>
-                <div class="skillicon">
-                    <p>MySQL, MongoDB</p>
-                    <i class="fas fa-database"></i>
-                </div>
-            </div>
-            <div class="skills">
-                <h3>Autres</h3>
-                <div class="skillbar">
-                    <div id="skillbarinfour"></div>
-                </div>
-                <div class="skillicon">
-                    <div id="skillother">
-                        <div id="wcag">
-                            <p>WCAG</p><i class="fas fa-universal-access"></i>
-                        </div>
-                        <div id="owasp">
-                            <p>OWASP</p>
-                            <div id="lock"><i class="fas fa-lock"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <h2>Compétences</h2>
+      <div id="skills">
+        <div class="skills">
+          <h3>HTML/CSS</h3>
+          <div class="skillbar">
+            <div id="skillbarinone"></div>
+          </div>
+          <div class="skillicon">
+            <i class="fab fa-sass"></i>
+          </div>
         </div>
-    </section>
-
-    <section id="experiences">
-        <h2>Expériences</h2>
-        <h3>2020 - Parcours OpenClassrooms</h3>
-        <ul>
-            <li>Réalisation du frontend d'un site e-commerce en JS<i class="fas fa-coffee"></i></li>
-            <li>Construction d'une API sécurisée avec node.js pour un site d'avis gastronomiques<i
-                    class="fas fa-pizza-slice"></i></li>
-            <li>Création d'un réseau social d'entreprise avec node.js et vue.js<i class="fab fa-facebook-square"></i>
-            </li>
-        </ul>
+        <div class="skills">
+          <h3>JavaScript</h3>
+          <div class="skillbar">
+            <div id="skillbarintwo"></div>
+          </div>
+          <div class="skillicon">
+            <i class="fab fa-vuejs"></i>
+            <i class="fab fa-node"></i>
+          </div>
+        </div>
+        <div class="skills">
+          <h3>Bases de données</h3>
+          <div class="skillbar">
+            <div id="skillbarinthree"></div>
+          </div>
+          <div class="skillicon">
+            <p>MySQL, MongoDB</p>
+            <i class="fas fa-database"></i>
+          </div>
+        </div>
+        <div class="skills">
+          <h3>Autres</h3>
+          <div class="skillbar">
+            <div id="skillbarinfour"></div>
+          </div>
+          <div class="skillicon">
+            <div id="skillother">
+              <div id="wcag">
+                <p>WCAG</p>
+                <i class="fas fa-universal-access"></i>
+              </div>
+              <div id="owasp">
+                <p>OWASP</p>
+                <div id="lock"><i class="fas fa-lock"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="perks">
-        <h2>Autres savoir-faire</h2>
-        <div class="container">
-            <div class="card">
-                <div class="box">
-                    <div class="percent">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h3>95<span>%</span></h3>
-                        </div>
-                    </div>
-                    <h3 class="text">Composition musicale, autodidacte</h3>
-                </div>
+      <h2>Autres savoir-faire</h2>
+      <h3>Hard Skills</h3>
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="40" cy="40" r="40"></circle>
+                <circle cx="40" cy="40" r="40"></circle>
+              </svg>
+              <div class="number">
+                <p>98<span>%</span></p>
+              </div>
             </div>
-            <div class="card">
-                <div class="box">
-                    <div class="percent">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h3>90<span>%</span></h3>
-                        </div>
-                    </div>
-                    <h3 class="text">Violoniste classique, professionnel</h3>
-                </div>
+            <p class="text">Rédaction, orthographe, grammaire</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="40" cy="40" r="40"></circle>
+                <circle cx="40" cy="40" r="40"></circle>
+              </svg>
+              <div class="number">
+                <p>95<span>%</span></p>
+              </div>
             </div>
-            <div class="card">
-                <div class="box">
-                    <div class="percent">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h3>3<span>%</span></h3>
-                        </div>
-                    </div>
-                    <h3 class="text">Musculation</h3>
-                </div>
+            <p class="text">Anglais</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="40" cy="40" r="40"></circle>
+                <circle cx="40" cy="40" r="40"></circle>
+              </svg>
+              <div class="number">
+                <p>3<span>%</span></p>
+              </div>
             </div>
+            <p class="text">Musculation</p>
+          </div>
+        </div>
+      </div>
+      <h3>Soft Skills</h3>
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <h4>Efficacité</h4>
+            <p class="text">
+              100% de réussite à la formation de développeur web en un temps
+              record selon les professeurs
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <h4>Créativité</h4>
+            <p class="text">Composition de musique électronique</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <h4>Travail d'équipe</h4>
+            <p class="text">
+              Sens de la synchronisation parfaite en tant que musicien
+              d'orchestre
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div id="contact">
-            <a href="mailto:jonas.siry@gmail.com">Cliquez ici pour me contacter</a>
-        </div>
+      <div id="contact">
+        <a href="mailto:jonas.siry@gmail.com">Cliquez ici pour me contacter</a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
