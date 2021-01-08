@@ -1,10 +1,10 @@
-$colormain: #172f73;
-$colorback: #c4c8da;
+$colormain: #143e5d;
+$colorback: #c2dbed;
 
 $circle-width: 0.08em;
 
 body {
-  font-family: "EB Garamond", serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   width: 21cm;
   height: 29.7cm;
@@ -14,20 +14,20 @@ body {
 }
 
 header {
-  background: lighten($colorback, 8%);
+  background: lighten($colorback, 10%);
   text-align: center;
   display: flex;
   justify-content: space-between;
   #headerleft {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: lighten($colormain, 5%);
     width: 25%;
     position: relative;
     padding: 1rem;
     #photo {
-      background-image: url("../assets/jonas_profil.jpg");
-      background-size: cover;
+      // background-image: url("../assets/jonas_profil.jpg");
+      // background-size: cover;
       height: 15rem;
     }
     #headerleftbottom {
@@ -43,41 +43,41 @@ header {
     }
     &:after {
       content: "";
-      height: 60%;
       position: absolute;
       background: $colormain;
       bottom: 0;
-      right: -50px;
+      right: -40px;
       height: 30%;
       width: 2px;
-      top: 20%;
+      top: 30%;
     }
   }
   #headinfo {
     padding: 0 1rem 0 1rem;
     width: 50%;
     h1 {
+      padding-top: 2rem;
       color: $colormain;
-      font-size: 3rem;
+      font-size: 2.7rem;
       margin-bottom: 1rem;
     }
     h2 {
       color: $colormain;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     p {
       color: lighten($colormain, 20%);
-      padding-top: 1rem;
+      padding-top: 2rem;
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
   #headerright {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: lighten($colormain, 5%);
     width: 25%;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-right: 1rem;
     position: relative;
     p {
@@ -99,26 +99,55 @@ header {
     }
     &:after {
       content: "";
-      height: 60%;
       position: absolute;
       background: $colormain;
       bottom: 0;
-      left: -50px;
+      left: -40px;
       height: 30%;
       width: 2px;
-      top: 20%;
+      top: 30%;
     }
   }
 }
 
+#resume {
+  background: linear-gradient(
+    180deg,
+    lighten($colorback, 10%) 0%,
+    lighten($colorback, 14%) 100%
+  );
+  padding: 2rem;
+  p {
+    font-size: 1.3rem;
+    color: lighten($colormain, 10%);
+    font-weight: bold;
+    text-align: center;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+    &:nth-child(2) {
+      margin-bottom: 1rem;
+    }
+  }
+  &:after {
+    border-bottom: 3px solid $colormain;
+    content: "";
+    display: block;
+    width: 10rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+  }
+}
+
 #experiences {
-  background-color: lighten($colorback, 16%);
+  background-color: lighten($colorback, 14%);
   padding: 2rem;
   h2 {
     margin-top: -0.5rem;
     margin-bottom: 0;
     color: $colormain;
-    font-size: 2rem;
+    font-size: 1.7rem;
     &:after {
       content: "";
       display: block;
@@ -131,26 +160,42 @@ header {
     li {
       list-style-type: circle;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: lighten($colormain, 20%);
       margin-bottom: 0.5rem;
       i {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: $colormain;
         margin-left: 1rem;
       }
+      a {
+        text-decoration: none;
+        color: lighten($colormain, 15%);
+        &:hover {
+          color: lighten($colormain, 30%);
+        }
+      }
     }
+  }
+  &:after {
+    border-bottom: 3px solid $colormain;
+    content: "";
+    display: block;
+    width: 10rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-bottom: -2rem;
   }
 }
 
 #formation {
-  background-color: lighten($colorback, 12%);
+  background-color: lighten($colorback, 14%);
   padding: 2rem;
   h2 {
     margin-top: -0.5rem;
     margin-bottom: 0;
     color: $colormain;
-    font-size: 2rem;
+    font-size: 1.7rem;
     &:after {
       content: "";
       display: block;
@@ -162,26 +207,35 @@ header {
   ul {
     li {
       font-weight: bold;
-      font-size: 1.2rem;
-      color: lighten($colormain, 20%);
+      font-size: 1rem;
+      color: lighten($colormain, 15%);
       margin-bottom: 0.5rem;
       i {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: $colormain;
         margin-left: 1rem;
       }
     }
   }
+  &:after {
+    border-bottom: 3px solid $colormain;
+    content: "";
+    display: block;
+    width: 10rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+  }
 }
 
 #competences {
-  background-color: lighten($colorback, 15%);
+  background-color: lighten($colorback, 14%);
   padding: 2rem;
   h2 {
     margin-top: -0.5rem;
     margin-bottom: 0;
     color: $colormain;
-    font-size: 2rem;
+    font-size: 1.7rem;
     &:after {
       content: "";
       display: block;
@@ -198,7 +252,7 @@ header {
       width: 20rem;
       h3 {
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: lighten($colormain, 10%);
         margin-bottom: 0;
       }
@@ -230,7 +284,7 @@ header {
         }
       }
       p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
         margin: 0;
         color: $colormain;
@@ -242,7 +296,7 @@ header {
         justify-content: space-between;
         align-items: center;
         i {
-          font-size: 2rem;
+          font-size: 1.8rem;
           color: lighten($colormain, 10%);
         }
         #skillother {
@@ -266,16 +320,25 @@ header {
       }
     }
   }
+  &:after {
+    border-bottom: 3px solid $colormain;
+    content: "";
+    display: block;
+    width: 10rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+  }
 }
 
 #perks {
-  background-color: lighten($colorback, 11%);
+  background-color: lighten($colorback, 14%);
   padding: 2rem;
   h2 {
     margin-top: -0.5rem;
     margin-bottom: 0;
     color: $colormain;
-    font-size: 2rem;
+    font-size: 1.7rem;
     &:after {
       content: "";
       display: block;
@@ -285,14 +348,16 @@ header {
     }
   }
   h3 {
-    margin-top: 2rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: lighten($colormain, 10%);
+  }
+  #soft {
+    margin-top: 1.5rem;
   }
   p {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: lighten($colormain, 20%);
   }
 }
@@ -310,11 +375,11 @@ header {
 .container .card {
   position: relative;
   width: 230px;
-  background: lighten($colorback, 2%);
+  background: lighten($colorback, 10%);
   display: flex;
   justify-content: center;
   padding-top: 1rem;
-  height: 180px;
+  height: 160px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -392,11 +457,12 @@ svg circle:nth-child(2) {
 
 h4 {
   color: $colormain;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0.5rem;
   margin-bottom: 0;
   position: relative;
+  padding-bottom: 0.8rem;
   &:after {
     border-bottom: 2px solid $colormain;
     content: "";
@@ -408,13 +474,13 @@ h4 {
 }
 
 footer {
-  background: $colorback;
+  background: lighten($colorback, 10%);
   text-align: center;
   #contact {
     padding: 2rem;
     a {
       color: $colormain;
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: bold;
       text-decoration: none;
     }
