@@ -409,7 +409,6 @@ header {
   position: relative;
   margin-top: 20px;
   margin-bottom: -1rem;
-  padding: 0 5px 0 5px;
 }
 
 svg {
@@ -458,19 +457,30 @@ svg circle:nth-child(2) {
 
 h4 {
   color: $colormain;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 0.5rem;
   margin-bottom: 0;
   position: relative;
   padding-bottom: 0rem;
+  &:not(.softh4):before {
+    border-top: 2px solid $colormain;
+    content: "";
+    display: block;
+    width: 2rem;
+    margin: 0 auto;
+    padding-bottom: 0.4rem;
+  }
+}
+
+.softh4 {
   &:after {
     border-bottom: 2px solid $colormain;
     content: "";
     display: block;
     width: 2rem;
     margin: 0 auto;
-    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
   }
 }
 
