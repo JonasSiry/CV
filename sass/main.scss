@@ -169,6 +169,12 @@ header {
         color: $colormain;
         margin-left: 1rem;
       }
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+        margin-top: 0.2rem;
+        color: lighten($colormain, 30%);
+      }
       a {
         text-decoration: none;
         color: lighten($colormain, 15%);
