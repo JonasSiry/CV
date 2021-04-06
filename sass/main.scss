@@ -28,7 +28,7 @@ header {
     #photo {
       // background-image: url("../assets/jonas_profil.jpg");
       // background-size: cover;
-      height: 15rem;
+      height: 12rem;
     }
     #headerleftbottom {
       display: flex;
@@ -58,13 +58,13 @@ header {
     h1 {
       padding-top: 2rem;
       color: $colormain;
-      font-size: 2.7rem;
+      font-size: 2.3rem;
       margin-bottom: 1rem;
     }
     h2 {
-      padding-top: 4rem;
+      padding-top: 2.5rem;
       color: $colormain;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     p {
       color: lighten($colormain, 20%);
@@ -78,7 +78,7 @@ header {
     font-size: 1rem;
     color: lighten($colormain, 5%);
     width: 25%;
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     padding-right: 1rem;
     position: relative;
     p {
@@ -111,39 +111,41 @@ header {
   }
 }
 
-#resume {
+header {
   background: linear-gradient(
     180deg,
     lighten($colorback, 10%) 0%,
     lighten($colorback, 14%) 100%
   );
-  padding: 2rem;
-  p {
-    font-size: 1.3rem;
-    color: lighten($colormain, 10%);
-    font-weight: bold;
-    text-align: center;
-    &:nth-child(1) {
-      margin-top: 0;
-    }
-    &:nth-child(2) {
-      margin-bottom: 1rem;
-    }
-  }
-  &:after {
-    border-bottom: 3px solid $colormain;
-    content: "";
-    display: block;
-    width: 10rem;
-    margin: 0 auto;
-    padding-top: 1rem;
-    margin-bottom: -2rem;
-  }
+
+  // padding: 2rem;
+  // p {
+  //   font-size: 1.3rem;
+  //   color: lighten($colormain, 10%);
+  //   font-weight: bold;
+  //   text-align: center;
+  //   &:nth-child(1) {
+  //     margin-top: 0;
+  //   }
+  //   &:nth-child(2) {
+  //     margin-bottom: 1rem;
+  //   }
+  // }
+  // &:after {
+  //   border-bottom: 3px solid $colormain;
+  //   content: "";
+  //   display: block;
+  //   width: 10rem;
+  //   margin: 0 auto;
+  //   padding-top: 1rem;
+  //   margin-bottom: -2rem;
+  // }
 }
 
 #experiences {
   background-color: lighten($colorback, 14%);
   padding: 2rem;
+  padding-top: 0rem;
   h2 {
     margin-top: -0.5rem;
     margin-bottom: 0;
@@ -198,6 +200,7 @@ header {
 #formation {
   background-color: lighten($colorback, 14%);
   padding: 2rem;
+  padding-top: 1rem;
   // padding-bottom: 13rem;
   h2 {
     margin-top: -0.5rem;
@@ -239,6 +242,7 @@ header {
 #competences {
   background-color: lighten($colorback, 14%);
   padding: 2rem;
+  padding-top: 1rem;
   h2 {
     margin-top: -0.5rem;
     margin-bottom: 0;
@@ -328,15 +332,15 @@ header {
       }
     }
   }
-  &:after {
-    border-bottom: 3px solid $colormain;
-    content: "";
-    display: block;
-    width: 10rem;
-    margin: 0 auto;
-    padding-top: 1rem;
-    margin-bottom: -2rem;
-  }
+  // &:after {
+  //   border-bottom: 3px solid $colormain;
+  //   content: "";
+  //   display: block;
+  //   width: 10rem;
+  //   margin: 0 auto;
+  //   padding-top: 1rem;
+  //   margin-bottom: -2rem;
+  // }
 }
 
 #perks {
