@@ -262,40 +262,46 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     .skills {
+      border: 2px solid $colormain;
       width: 20rem;
+      margin-top: 1rem;
+      padding: 0.5rem;
       h3 {
         font-weight: bold;
         font-size: 1.1rem;
         color: lighten($colormain, 10%);
-        margin-bottom: 0;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+        display: flex;
+        justify-content: center;
       }
-      .skillbar {
-        border: 3px solid $colormain;
-        width: 18rem;
-        height: 20px;
-        overflow: hidden;
-        margin: 0.5rem 0 0.5rem 0;
-        #skillbarinone {
-          width: 100%;
-          height: 20px;
-          background: lighten($colormain, 40%);
-        }
-        #skillbarintwo {
-          width: 70%;
-          height: 20px;
-          background: lighten($colormain, 40%);
-        }
-        #skillbarinthree {
-          width: 50%;
-          height: 20px;
-          background: lighten($colormain, 40%);
-        }
-        #skillbarinfour {
-          width: 50%;
-          height: 20px;
-          background: lighten($colormain, 40%);
-        }
-      }
+      // .skillbar {
+      //   border: 3px solid $colormain;
+      //   width: 18rem;
+      //   height: 20px;
+      //   overflow: hidden;
+      //   margin: 0.5rem 0 0.5rem 0;
+      //   #skillbarinone {
+      //     width: 100%;
+      //     height: 20px;
+      //     background: lighten($colormain, 40%);
+      //   }
+      //   #skillbarintwo {
+      //     width: 70%;
+      //     height: 20px;
+      //     background: lighten($colormain, 40%);
+      //   }
+      //   #skillbarinthree {
+      //     width: 50%;
+      //     height: 20px;
+      //     background: lighten($colormain, 40%);
+      //   }
+      //   #skillbarinfour {
+      //     width: 50%;
+      //     height: 20px;
+      //     background: lighten($colormain, 40%);
+      //   }
+      // }
       p {
         font-size: 0.8rem;
         font-weight: 500;
@@ -328,6 +334,18 @@ header {
               position: relative;
               left: 3px;
             }
+          }
+          #french {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+          }
+          #english {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
           }
         }
       }
